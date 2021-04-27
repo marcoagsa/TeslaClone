@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('font/FontsFree-Net-GothamMedium.ttf');
+}
+  
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Gotham Medium",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    box-sizing:border-box;
+}
+
+.header {
+    position: absolute;
+    display: block;
+    inline-size: 100%;
+    z-index: 5000;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: transparent;
+}
+
+.container {
+    width: 100vw;
+    align-content: center;
+    max-width: none;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    block-size: 52px;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.nav {
+    inline-size: 100%;
+    margin-right: 15vw;
+}
+
+.nav-List {
+    display: flex;
+    justify-content: center;
+    inline-size: 100%;
+}
+
+.nav--primary .nav--list_item {
+    font-size: 14px;
+    line-height: 20px;
+    padding-block-end: 0;
+}
+
+.nav-list_item {
+    list-style: none;
+}
+
+
+.header-main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100%;
+    overflow: hidden;
+    text-indent: -999em;
+    inline-size: 47%;
+    border-block-end: 0;
+    box-shadow: 0 0 0 transparent;
+}
+
+.icon-White {
+    filter: invert(1);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNDIgMzUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIE1lZXQiIHdpZHRoPSIzNDIiIGhlaWdodD0iMzUiPjxwYXRoIGNsYXNzPSJ0ZHMtaWNvbi1maWxsLS1wcmltYXJ5IiBkPSJNMCAuMWE5LjcgOS43IDAgMDA3IDYuOTNoMTAuOTNsLjU2LjIydjI3LjU4aDYuODJWNy4yOWwuNjItLjIyaDEwLjk0YTkuODIgOS44MiAwIDAwNy02LjkzVi4wN0gwVi4xek0yMzguNjEuMDZoLTYuOHYzNC44NWgzMS4xNGE5LjY4IDkuNjggMCAwMDUuOTQtNi44NmgtMzAuM2wuMDItMjcuOTl6bS01Mi4zMyA2Ljg2YzMuNjItMSA2LjY2LTMuODIgNy4zOS02Ljg4bC0zOC4xLjA2djIwLjU1aDMxLjE3djcuMjNoLTI0LjQ2YTEzLjYgMTMuNiAwIDAwLTguNzEgN2gzOS44OVYxMy44MUgxNjIuM1Y2LjkyaDIzLjk4em0xMTYuMTcgMjcuOTdoNi43NlYyMC44N2gyNC41OHYxNC4wMmg2Ljc1VjEzLjg3bC0zOC4wOS0uMDR6TTg1LjM1IDdoMjZhOS41NyA5LjU3IDAgMDA3LjA1LTdINzguM2E5LjYxIDkuNjEgMCAwMDcuMDUgN3ptMCAxMy43N2gyNmE5LjU5IDkuNTkgMCAwMDcuMDUtN0g3OC4zYTkuNjMgOS42MyAwIDAwNy4wNSA3em0wIDE0LjE0aDI2YTkuNTkgOS41OSAwIDAwNy4wNS03SDc4LjNhOS42MiA5LjYyIDAgMDA3LjA1IDd6TTMwOC40NiA3LjAyaDI2YTkuNTggOS41OCAwIDAwNy4wNi03aC00MC4xMWE5LjU5IDkuNTkgMCAwMDcuMDUgN3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=")
+}
+
+.tesla-icon {
+    content: "";
+    display: block;
+    max-width: 100%;
+    block-size: 24px;
+    background-size: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+
+.nav-list-item {
+    font-size: 14px;
+    line-height: 20px;
+    padding-block-end: 0;
+    align-self: center;
+}
+
+.nav-item-list-item-last {
+    display: flex;
+    block-size: 100%;
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.item_link {
+    margin: 0 10px;
+    display: flex;
+    cursor: pointer;
+    line-height: 1.25;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0 0 0 transparent;
+}
+
+
+.nav a {
+    font-family:'Gotham Medium';
+    text-decoration: none;
+    font-size:14px;
+    color:#000;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+} 
+ /* Humburger Icon */
+.container-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 4px;
+}
+ 
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-1px, -4px);
+}
+
+.menu-container-icon {
+    float: right;
+    cursor: pointer;
+}
+
+.menu-hunburger {
+    right: -315px;
+    transition: 300ms ease-in-out;
+    background-color: #fff;
+    border-inline-start-width: 1px;
+    border-inline-start-style: solid;
+    border-inline-start-color: #f4f4f4;
+    block-size: calc(100% + 20px);
+    min-width: 312px;
+    overflow-y: scroll;
+    padding: 30px 20px 20px;
+    position: fixed;
+    top: calc(20px*-1);
+    z-index: 30;
+}
+
+.menu-hunburger-change {
+    right: 0px;
+    transition: 300ms ease-in-out;
+}
+
+.menu-nav {
+    margin-top: 20%;
+}
+
+.menu-nav-link {
+    border-block-end-width: 1px;
+    border-block-end-style: solid;
+    border-block-end-color: #d0d1d2;
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration-line: none;
+}
+
+
+
+/* Backgroud HOME PAGE */
+.section1 {
+    background-image:url('img/ms-homepage-desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section2 {
+    background-image:url('img/Desktop-ModelY.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section3 {
+    background-image:url('img/m3-homepage-desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section4 {
+    background-image:url('img/mx-homepage-desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section5 {
+    background-image:url('img/Desktop-SolarPanels.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section6 {
+    background-image:url('img/solar-roof-hero-desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.section7 {
+    background-image:url('img/Desktop-Accessories.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+ /* MODAL LOCALE */
+
+.modal-close-icon {
+    display: block;
+    block-size: 16px;
+    inline-size: 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M98.2 2.7c2.4 2.4 2.4 8.4 0 12l-36 35.6 36 36.2c2.3 2.4 2.4 8.1.2 10.6l-.2.2c-3.6 3.6-9.5 3.6-12 0L50.5 62 14.6 97.3c-3.6 3.6-9.5 3.6-12 0C-.8 95-.8 89 2.7 86.5l36.2-36.2L2.7 14.7C-.8 11-1 5.3 2.5 2.8l.2-.1C5-1 11-1 14.7 2.7l35.7 36 35.9-36c2.4-3.6 8.3-3.6 12 0z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.modal-close, .modal[open]+.tds-modal-backdrop {
+    backdrop-filter: blur(4px);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    border: none;
+    background-color: hsla(0,0%,100%,.25);
+    cursor: pointer;
+}
+
+.modal:not([class*=tds-scrim--]) {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.modal-locale {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 90%;
+    max-width: 428px;
+    min-width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 64px 24px;
+}
+
+[id=locale-modal] {
+    z-index: 9999;
+}
+
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/* scroll smood */
+
+.wrapper {
+    display: flex;
+    overflow: auto;
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column nowrap;
+}
+
+.y-scroll-snap {
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper>div {
+    scroll-snap-align: center;
+    flex: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header-modelo {
+    flex-grow: 1;
+    margin-top: calc(20vh + 20px);
+    text-align: center;
+}
+
+.model-label {
+    font-size: 40px; 
+    text-align: center; 
+    transform: translateY(-20px);
+    color: #393c41;
+    font-family: "Gotham Medium",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    transition: transform .5s ease-in-out .5s,opacity .5s ease-in-out .5s,-webkit-transform .5s ease-in-out .5s;
+}
+
+.model-label-panels {
+    font-size: 34px !important;
+}
+
+.modal_subheading {
+    font-size: 14px;
+    color: #5c5e62;
+    min-height: 27px;
+    text-align: center; 
+    line-height: 1.414;
+    font-weight: 400!important;
+    padding-top: 0;
+    font-family: Gotham Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+    -webkit-transition: opacity .5s ease-in-out 1s,-webkit-transform .5s ease-in-out .5s;
+    transition: opacity .5s ease-in-out 1s,-webkit-transform .5s ease-in-out .5s;
+    transition: transform .5s ease-in-out .5s,opacity .5s ease-in-out 1s;
+    transition: transform .5s ease-in-out .5s,opacity .5s ease-in-out 1s,-webkit-transform .5s ease-in-out .5s;
+}
+
+
+.link, a {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: initial;
+    color: #393c41;
+    font-family: Gotham Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    transition: box-shadow .25s cubic-bezier(.5,.25,.25,.75),color .25s cubic-bezier(.5,.25,.25,.75);
+    box-shadow: 0 1px 0 0 currentColor;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-ol {
+    display: inline-flex;
+    padding: 40px;
+}
+
+.footer-a {
+    color: #393c41;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: unset;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+/* BUTTON SHOP */
+
+.button {
+    min-block-size: 40px;
+    min-inline-size: 250px;
+    max-inline-size: 400px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 4px 2px;
+    border-radius: 100px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 transparent;
+    background-color: rgba(18, 18, 18, 0.8);
+
+}
+
+.button-gray {
+    background-color: hsla(0,0%,100%,.5);
+    color: #000;
+}
+
+.button-div {
+    margin-top: 55vh;
+}
+
+.tcl-hero-parallax__additional-links .tds-icon.tds-icon--bounce.hero-arrow_down {
+    height: 24px;
+    width: 24px;
+    display: block;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.arrow-down {
+    height: 27px;
+    width: 27px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.icon-arrow-down {
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBNZWV0IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PHBhdGggZD0iTTEwMCA1LjVjMCAxLjMtLjUgMi42LTEuNSAzLjVMNTAgNTcuNSAxLjUgOWMtMi0yLTItNS4xIDAtNy4xczUuMS0yIDcuMSAwTDUwIDQzLjQgOTEuNSAxLjljMi0yIDUuMS0yIDcuMSAwIC45IDEgMS40IDIuMyAxLjQgMy42eiIvPjwvc3ZnPg==");
+}
