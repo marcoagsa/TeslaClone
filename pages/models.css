@@ -23,10 +23,17 @@ h1 {
     display: block;
     margin-top: 4px;
 }
+
 .plaid {
     font-family: 'Gotham Light',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     font-size: 17px;
     line-height: 17px;
+}
+
+.sectionModalS2-h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 6vh;
 }
 
 /* Backgroud HOME PAGE */
@@ -55,10 +62,10 @@ h1 {
 
 .slider {
     display: block;
-    height: 90vh;
+    height: 100vh;
     width: 90vw;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
 }
 
