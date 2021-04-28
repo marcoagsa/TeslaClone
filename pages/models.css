@@ -1,0 +1,183 @@
+@import url('../global.css');
+
+h1 {
+    letter-spacing: -.6px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #171a20;
+}
+
+.header-section {
+    -webkit-padding-before: 12vh;
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.header-lower {
+    display: block;
+    margin-top: 5px;
+}
+
+.header-upper {
+    display: block;
+    margin-top: 4px;
+}
+.plaid {
+    font-family: 'Gotham Light',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+/* Backgroud HOME PAGE */
+.sectionModalS1 {
+    background-image:url('../img/ms-main-hero-desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.sectionModalS2 {
+    background-image:url('../img/MS-Interior-Hero-Desktop.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height:100vh;
+}
+
+.sectionModalS3 {
+    background-color: #000;
+    height:100vh;
+}
+
+.slider {
+    display: block;
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    bottom: -25px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.slideP {
+    font-size: inherit;
+    color: #f4f4f4;
+}
+
+.slider li input:focus-visible ~ label {
+    background-color: #fff;
+    color: red;
+}
+
+.slider li:nth-child(1) label {
+    left: 200px;
+}
+
+.slider li:nth-child(2) label {
+    left: 220px;
+}
+
+.slider li:nth-child(3) label {
+    left: 240px;
+}
+
+.slider li:nth-child(4) label {
+    left: 260px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tcl-carousel-navigation-item {
+    width: 100%;
+    padding-top: 32px;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+
+/* SelectionModel 1 Footer */
+
+.footer-ModelS {
+    position: relative;
+    min-width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 70vh;
+}
+
+.padding {
+    padding: 40px;
+}
+
+.button-order {
+    min-width: 0;
+    padding: 8px 40px;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+
+
+.s2-head {
+    padding-bottom: 0;
+    margin-bottom: -2px;
+}
+
+.tds-text--h2 {
+    letter-spacing: -.5px;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.tds-text--caption {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.tds-text--white {
+    color: #fff!important;
+}
+
+.fineprint {
+    line-height: 18px;
+}

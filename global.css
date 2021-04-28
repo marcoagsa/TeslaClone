@@ -2,6 +2,11 @@
     font-family: 'Gotham Medium';
     src: url('font/FontsFree-Net-GothamMedium.ttf');
 }
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('font/GothamLight.otf');
+}
   
 
 * {
@@ -27,6 +32,7 @@ body {
     z-index: 5000;
     top: 0;
     box-sizing: border-box;
+
 }
 
 .header-container {
@@ -484,3 +490,4 @@ ol {
     background-size: 25px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBNZWV0IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PHBhdGggZD0iTTEwMCA1LjVjMCAxLjMtLjUgMi42LTEuNSAzLjVMNTAgNTcuNSAxLjUgOWMtMi0yLTItNS4xIDAtNy4xczUuMS0yIDcuMSAwTDUwIDQzLjQgOTEuNSAxLjljMi0yIDUuMS0yIDcuMSAwIC45IDEgMS40IDIuMyAxLjQgMy42eiIvPjwvc3ZnPg==");
 }
+
