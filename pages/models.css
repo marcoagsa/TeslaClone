@@ -62,16 +62,10 @@ h1 {
 
 .slider {
     display: block;
-    height: 100vh;
     width: 90vw;
     margin: auto;
     margin-top: 50px;
     position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
 }
 
 .slider img {
@@ -81,63 +75,61 @@ h1 {
     vertical-align: top;
 }
 
-.slider input {
-    display: none;
+.mySlides {
+    display:none
 }
 
-.slider label {
-    bottom: -25px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-    border-radius: 50%;
-    border: 1px solid #fff;
+.left, .right, .badge {
+    cursor:pointer;
+    color: #fff;
+    padding: 20px;
+    border-block-color: #fff;
+    border: 2px solid;
 }
-.slideP {
-    font-size: inherit;
-    color: #f4f4f4;
-}
-
-.slider li input:focus-visible ~ label {
-    background-color: #fff;
-    color: red;
-}
-
-.slider li:nth-child(1) label {
-    left: 200px;
-}
-
-.slider li:nth-child(2) label {
-    left: 220px;
-}
-
-.slider li:nth-child(3) label {
-    left: 240px;
-}
-
-.slider li:nth-child(4) label {
-    left: 260px;
-}
-
-.slider img {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.tcl-carousel-navigation-item {
+.dots {
     width: 100%;
-    padding-top: 32px;
+    margin-top: 20px;
 }
 
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+.dots-fill {
+    background-color: #fff;
 }
 
+.arrows {
+    width: 100%;
+    margin-top: 20px;
+}
+.center {
+    text-align: center;
+}
+.display-bottommiddle {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    z-index: 9;
+}
+
+.left {
+    float: left;
+    margin-left: 6vw;
+}
+
+.right {
+    float: right;
+    margin-right: 6vw;
+}
+
+.badge1 {
+    margin-left: 200px;
+}
+
+.badge {
+    color: #fff;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 
 /* SelectionModel 1 Footer */

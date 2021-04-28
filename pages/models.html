@@ -191,31 +191,23 @@
         </div>
 
         <div id="sectionModalS3" class="sectionModalS3">
-
-            <ul class="slider">
-                <li>
-                    <label for="slide1"></label>
-                    <input type="radio" id="slide1" name="slide" checked>
-                    <img src="../img/MS-Interior-Carousel-A-Desktop.jpeg" />
-                </li>
-                <li>
-                    <label for="slide2"></label>
-                    <input type="radio" id="slide2" name="slide">
-                    <img src="../img/MS-Interior-Carousel-B-Desktop.jpeg" />
-                </li>
-                <li>
-                    <label for="slide3"></label>
-                    <input type="radio" id="slide3" name="slide">
-                    <img src="../img/MS-Interior-Carousel-C-Desktop.jpeg" />
-                </li>
-
-                <li>
-                    <label for="slide4"></label>
-                    <input type="radio" id="slide4" name="slide">
-                    <img src="../img/MS-Interior-Carousel-D-Desktop.jpeg" />
-                </li>
-            </ul>
-
+        
+            <div class="slider">
+                <div class="center display-bottommiddle">
+                    <div class="left " onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="right " onclick="plusDivs(1)">&#10095;</div>
+                </div>
+                <img class="mySlides" src="../img/MS-Interior-Carousel-A-Desktop.jpeg">
+                <img class="mySlides" src="../img/MS-Interior-Carousel-B-Desktop.jpeg">
+                <img class="mySlides" src="../img/MS-Interior-Carousel-C-Desktop.jpeg">
+                <img class="mySlides" src="../img/MS-Interior-Carousel-D-Desktop.jpeg">
+                <div class="dots">
+                    <span class="badge badge1 teste " onclick="currentDiv(1)"></span>
+                    <span class="badge teste " onclick="currentDiv(2)"></span>
+                    <span class="badge teste " onclick="currentDiv(3)"></span>
+                    <span class="badge teste " onclick="currentDiv(4)"></span>
+                </div>
+            </div> 
         </div>
 
         <div id="section4" class="section4">
@@ -336,4 +328,49 @@
         }
     }
     main.addEventListener('scroll', scrollEvent);
+</script>
+
+<script>
+    let myIndex = 0;
+    let slideIndex = 1;
+    carousel();
+  
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);   
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName('mySlides');
+        var dots = document.getElementsByClassName('teste');
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(' dots-fill', ' ');
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += ' dots-fill';
+    }
+
+    function carousel() {
+        var i;
+        const x = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName('teste');
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(' dots-fill', ' ');
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";
+        dots[myIndex-1].className += ' dots-fill';
+        setTimeout(carousel, 7000); // Change image every 2 seconds
+    }
 </script>
