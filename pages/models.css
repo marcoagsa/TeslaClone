@@ -60,6 +60,105 @@ h1 {
     height:100vh;
 }
 
+.sectionModalS4 {
+    background-color: #000;
+    height:100vh;
+}
+
+.sectionModalS5 {
+    background-color: #fff;
+    height:100vh;
+}
+
+.sectionModalS5-img {
+    background-image:url('../img/MS-Performance-Hero-Desktop_.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    display: inline-table;
+    height: 60vh;
+    width: 100vw;
+}
+
+.sectionModalS5-text {
+    line-height: 21px;
+    font-size: 14px;
+    max-width: 75ch;
+    margin-left: 8vw;
+    margin-right: 1vw;
+}
+
+.sectionModalS5-button {
+    min-width: 0;
+    padding: 8px 40px;
+    border: 3px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+
+.s2 {
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -.5px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 0;
+}
+
+.flex-item {
+    padding-top: 25px;
+    padding-left: 20vw;
+}
+
+.scrim-black {
+    background-color: #000;
+    color: #f4f4f4;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.vertical_padding {
+    padding-block-end: 16px !important;
+    padding-block-start: 16px !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.imgWidth {
+    width: 40vw;
+}
+
+.box-text-left {
+    margin-left: 5vw;
+    padding: 65px;
+    width: 50%;
+}
+
+.box-text-right {
+    margin-left: 5vw;
+    width: 50%;
+    padding: 65px;
+}
+
+.myH4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    letter-spacing: -.4px;
+}
+
+.myP {
+    padding-bottom: 14px;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 75ch;
+}
+
 .slider {
     display: block;
     width: 90vw;
@@ -79,13 +178,14 @@ h1 {
     display:none
 }
 
-.left, .right, .badge {
+.leftArrow, .rightArrow, .badge {
     cursor:pointer;
     color: #fff;
     padding: 20px;
     border-block-color: #fff;
     border: 2px solid;
 }
+
 .dots {
     width: 100%;
     margin-top: 20px;
@@ -95,31 +195,28 @@ h1 {
     background-color: #fff;
 }
 
-.arrows {
-    width: 100%;
-    margin-top: 20px;
-}
 .center {
     text-align: center;
 }
+
 .display-bottommiddle {
     position: absolute;
-    top: 20vh;
+    top: 35vh;
     width: 100%;
     z-index: 9;
 }
 
-.left {
+.leftArrow {
     float: left;
     margin-left: 6vw;
 }
 
-.right {
+.rightArrow {
     float: right;
     margin-right: 6vw;
 }
 
-.badge1 {
+.badgeFirst {
     margin-left: 200px;
 }
 
@@ -131,6 +228,23 @@ h1 {
     margin-right: 10px;
 }
 
+.text {
+    line-height: 21px;
+    font-size: 14px;
+    max-width: 75ch;
+    color: #f4f4f4;
+    padding-bottom: 14px;
+    margin-left: 24vw;
+    margin-right: 11vw;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: #fff;
+    margin-left: 24vw;
+    margin-bottom: 20px;
+}
 
 /* SelectionModel 1 Footer */
 
@@ -156,27 +270,29 @@ h1 {
     background-color: transparent;
 }
 
-
 .s2-head {
     padding-bottom: 0;
     margin-bottom: -2px;
 }
 
-.tds-text--h2 {
+.text-h2 {
     letter-spacing: -.5px;
     font-size: 28px;
     line-height: 36px;
+    margin-top: 10px;
 }
 
-.tds-text--caption {
+.text-caption {
     font-size: 12px;
     line-height: 18px;
 }
 
-.tds-text--white {
+.text-white {
     color: #fff!important;
 }
-
+.text-black {
+    color: #000!important;
+}
 .fineprint {
     line-height: 18px;
 }
