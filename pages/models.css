@@ -9,7 +9,6 @@ h1 {
 }
 
 .header-section {
-    -webkit-padding-before: 12vh;
     padding-top: 12vh;
     text-align: center;
 }
@@ -22,6 +21,10 @@ h1 {
 .header-upper {
     display: block;
     margin-top: 4px;
+}
+
+.main {
+    background-color: #000;
 }
 
 .plaid {
@@ -43,7 +46,7 @@ h1 {
     background-size: cover;
     background-position-y: 50%;
     background-position-x: 50%;
-    height:100vh;
+    height: 100vh;
 }
 
 .sectionModalS2 {
@@ -52,22 +55,19 @@ h1 {
     background-size: cover;
     background-position-y: 50%;
     background-position-x: 50%;
-    height:100vh;
 }
 
 .sectionModalS3 {
     background-color: #000;
-    height:100vh;
 }
 
 .sectionModalS4 {
     background-color: #000;
-    height:100vh;
 }
 
 .sectionModalS5 {
     background-color: #fff;
-    height:100vh;
+    height: 100vh;
 }
 
 .sectionModalS5-img {
@@ -95,6 +95,125 @@ h1 {
     border: 3px solid #000;
     background-color: transparent;
     color: #000;
+}
+
+.sectionModalS6 {
+    background-color: #f4f4f4;
+}
+
+.sectionModalS6-img {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 2vh;
+
+}
+
+.sectionModalS6-header {
+    margin-left: 25vw;
+    margin-right: 25vh;
+}
+
+.sectionModalS6-h2 {
+    padding-bottom: 2vh;
+    font-weight: 500;
+    color: #171a20;
+    padding-top: 6vh;
+}
+
+.sectionModalS6-Li-left {
+    float: left;
+    width: 50%;
+    margin-right: 1vw;
+    align-self: baseline;
+}
+
+.sectionModalS6-Li-right {
+    float: right;
+    width: 50%;
+    margin-left: 1vw;
+    align-self: baseline;
+}
+
+.sectionModalS6-footer {
+    margin-left: 22vw;
+    margin-right: 22vw;
+    padding-top: 3vh;   
+}
+
+.sectionModalS6-Button {
+    padding: 20px;
+    border: 3px solid #393c41;
+    text-align: inherit;
+}
+
+.sectionModalS6-h3 {
+    color: #171a20;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -.6px;
+    margin-bottom: 16px;
+}
+
+.sectionModalS6-p {
+    color: #393c41;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 75ch;
+}
+
+.sectionModalS6-specs-left {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+
+.sectionModalS6-specs {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 19px;
+}
+
+.sectionModalS6-accelaration    {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.sectionModalS6-title {
+    letter-spacing: -.6px;
+    font-size: 24px;
+    color: #171a20;
+    font-weight: 500;
+}
+
+.sectionModalS6-h6 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #5c5e62;
+    padding: 10vh;
+}
+
+
+.sectionModalS7 {
+   background-color: #f4f4f4;
+    width: 100%;
+}
+
+.sectionModalS7-img {
+    background-image:url('../img/MS-Exterior-Hero-Desktop_.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    display: inline-table;
+    height: 60vh;
+    width: 100vw;
 }
 
 .s2 {
@@ -128,7 +247,7 @@ h1 {
 }
 
 .imgWidth {
-    width: 40vw;
+    width: 30vw;
 }
 
 .box-text-left {
@@ -161,7 +280,7 @@ h1 {
 
 .slider {
     display: block;
-    width: 90vw;
+    width: 75vw;
     margin: auto;
     margin-top: 50px;
     position: relative;
@@ -256,7 +375,7 @@ h1 {
 .footer-row {
     display: flex;
     justify-content: center;
-    margin-top: 70vh;
+    margin-top: 55vh;
 }
 
 .padding {
