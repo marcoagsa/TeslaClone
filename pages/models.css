@@ -199,10 +199,9 @@ h1 {
     padding: 10vh;
 }
 
-
 .sectionModalS7 {
    background-color: #f4f4f4;
-    width: 100%;
+   width: 100%;
 }
 
 .sectionModalS7-img {
@@ -214,6 +213,83 @@ h1 {
     display: inline-table;
     height: 60vh;
     width: 100vw;
+}
+
+.sectionModalS7-footer {
+    display: flex;
+    margin-left: 35vh;
+    padding: 3vh;
+}
+
+.sectionModalS7-left {
+    width: 18%;
+}
+
+.sectionModalS7-right {
+    flex-grow: 1;
+}
+
+.sectionModalS7-text {
+    line-height: 21px;
+    font-size: 14px;
+    max-width: 75ch;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.sectionModalS7-flex-end {
+    align-self: flex-end;
+}
+
+.sectionModalS8 {
+    background-color: #000;
+}
+
+.sectionModalS9 {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.sectionModalS9-box {
+    display: flex;
+}
+
+.sectionModalS9-left {
+    background-image: url('../img/MS-Range-Hero-Desktop_.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+    width: 150%;
+}
+
+.sectionModalS9-right {
+    flex-grow: 1;
+}
+
+.sectionModalS9-text {
+    line-height: 21px;
+    font-size: 14px;
+    max-width: 75ch;
+}
+
+.sectionModalS9-padding {
+    padding-top: 5vh;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+
+.sectionModalS9-button-Margin-top {
+    margin-top: 50vh;
+}
+
+.sectionModalS9-footer-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 55vh;
+    text-align: center;
+    padding: 100px;
 }
 
 .s2 {
